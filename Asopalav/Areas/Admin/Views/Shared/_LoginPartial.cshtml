@@ -1,0 +1,25 @@
+﻿@if (Convert.ToBoolean(Session["IsLoginValid"]) == true)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right", area = "" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                @Html.ActionLink("Hello " + Session["UserFullName"] + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+            </li>
+            @*<li>@Html.ActionLink("Log off", "LogOff", "Account", new { area = "" })</li>
+                    <li>@Html.ActionLink("Log off", Url.Content("~/Account/LogOff"), new { area = "" })</li>
+                <li><input type="submit" value="Log off" /></li>*@
+            <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+        </ul>
+        <a href="~/Account/LogOff">content</a>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        @*<li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>*@
+        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}
