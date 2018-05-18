@@ -1293,7 +1293,7 @@ h1 {
     font-size: 14px;
     padding: 28px 0;
     clear: both;
-    border-top: 1px solid #333336;
+    border-top: 1px solid #b6b6b9;
 }
 
 
@@ -1912,4 +1912,8 @@ h1 {
 .hd-background {
     background: #949697;
     color: #fff;
+}
+
+#footer {
+    background:#0d5198;
 }
