@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>ASOPALAV’s jewelry</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>*@
+    <div class="hd-fix">
+    <header id="header" class="hd-background">
+        <div class="container">
+            <a href="index.html" id="logo" title="ASOPALAV jewelry">ASOPALAV jewelry</a>
+            <div class="right-links">
+                <ul>
+                    <li><a href="cart.html"><span class="ico-products"></span>3 products, 500.00</a></li>
+                    <li><a href="#"><span class="ico-account"></span>Account</a></li>
+                    <li><a href="#"><span class="ico-signout"></span>Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- / header -->
+    <nav id="menu">
+        <div class="container" style="width:100% !important">
+            <div class="trigger"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Collections</a></li>
+                <li><a href="products.html">Fine Metal</a></li>
+                <li><a href="products.html">About us</a></li>
+                <li><a href="products.html">contact us</a></li>
+                <li><a href="products.html">Promotions</a></li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+    <!-- / navigation -->
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer id="footer">
+            <div class="container" style="width:100% !important">
+                <div class="cols">
+                    <div class="col">
+                        <h3>Frequently Asked Questions</h3>
+                        <!--<ul>
+                        <li><a href="#">Fusce eget dolor adipiscing </a></li>
+                        <li><a href="#">Posuere nisl eu venenatis gravida</a></li>
+                        <li><a href="#">Morbi dictum ligula mattis</a></li>
+                        <li><a href="#">Etiam diam vel dolor luctus dapibus</a></li>
+                        <li><a href="#">Vestibulum ultrices magna </a></li>
+                    </ul>-->
+                    </div>
+                    <div class="col media">
+                        <h3>Social media</h3>
+                        <ul class="social">
+                            <li><a href="#"><span class="ico ico-fb"></span>Facebook</a></li>
+                            <li><a href="#"><span class="ico ico-tw"></span>Twitter</a></li>
+                            <li><a href="#"><span class="ico ico-gp"></span>Google+</a></li>
+                            <li><a href="#"><span class="ico ico-pi"></span>Linkedin</a></li>
+                        </ul>
+                    </div>
+                    <div class="col contact">
+                        <h3>Contact us</h3>
+                        <p>Asopalav Jewellers Pvt Ltd in Vadodara<br>India</p>
+                        <p><span class="ico ico-em"></span><a href="#">contact@Asopalavjewelry.com</a></p>
+                        <p><span class="ico ico-ph"></span>99000000</p>
+                    </div>
+                    <div class="col newsletter">
+                        <!--<h3>Join our newsletter</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium.</p>-->
+                        <form action="#">
+                            <input type="text" placeholder="Your email address...">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </div>
+                <p class="copy">Copyright 2018 Asopalav Jewellers. All rights reserved.</p>
+            </div>
+            <!-- / container -->
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
