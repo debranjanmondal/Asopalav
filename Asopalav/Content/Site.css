@@ -27,3 +27,34 @@ textarea {
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
+
+/*-------- login ---------------*/
+
+.login-margin-top {
+    margin: 120px auto 50px auto;
+    width: 40%;
+}
+
+.login-pad {
+    padding-left: 110px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.checkbox {
+    left: 15px !important;
+    margin-top: 4px !important;
+}
+
+.left-pad {
+    padding-left: 0 !important;
+}
+
+.login-label {
+    padding-left: 16px;
+}
+
+.log-bdr {
+    border-top: 1px solid #ddd;
+}
