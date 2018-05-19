@@ -19,7 +19,8 @@
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
-textarea {
+textarea,
+.gender-width {
     max-width: 280px;
 }
 
@@ -31,7 +32,7 @@ textarea {
 /*-------- login ---------------*/
 
 .login-margin-top {
-    margin: 120px auto 50px auto;
+    margin: 110px auto 50px auto;
     width: 40%;
 }
 
@@ -57,4 +58,13 @@ textarea {
 
 .log-bdr {
     border-top: 1px solid #ddd;
+}
+
+/*----- Register -----*/
+
+.register-margin-top {
+    margin: 140px auto 40px auto;
+    width: 40%;
+    text-align:center;
+    font-weight:bold;
 }
