@@ -9,55 +9,27 @@
 
 </head>
 <body>
-    @*<div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("About", "About", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    </ul>
-                    @Html.Partial("_LoginPartial")
-                </div>
-            </div>
-        </div>*@
     <div class="hd-fix">
         <header id="header" class="hd-background">
             <div class="container">
                 <a href="index.html" id="logo" title="Asopalav Jewellers">Asopalav Jewellers</a>
                 <div class="right-links">
-                    @*<li><a href="cart.html"><span class="ico-products"></span>3 products, 500.00</a></li>
-                        <li><a href="#"><span class="ico-account"></span>Account</a></li>
-                        <li><a href="#"><span class="ico-signout"></span>Sign out</a></li>*@
-                    @if (Convert.ToBoolean(Session["IsLoginValid"]) == true)
-                    {
-                        using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                    <ul class="nav navbar-nav navbar-right">
+                        @if (Convert.ToBoolean(Session["IsLoginValid"]) == true)
                         {
                             @Html.AntiForgeryToken()
 
-                            <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    @Html.ActionLink("Hello " + Session["UserFullName"] + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
-                                </li>
-                                <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
-                                @*<li>@Html.ActionLink("Log off", "LogOff", "Account")</li>*@
-                            </ul>
+                            <li>
+                                @Html.ActionLink("Welcome " + Session["UserFullName"] + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                            </li>
+                            <li>@Html.ActionLink("Log off", "LogOff", "Account", new { area = "" }, new { })</li>
                         }
-                    }
-                    else
-                    {
-                        <ul class="nav navbar-nav navbar-right">
+                        else
+                        {
                             <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
-                        </ul>
-                    }
+
+                        }
+                    </ul>
                 </div>
             </div>
         </header>
@@ -85,13 +57,6 @@
                 <div class="cols">
                     <div class="col">
                         <h3>Frequently Asked Questions</h3>
-                        <!--<ul>
-                            <li><a href="#">Fusce eget dolor adipiscing </a></li>
-                            <li><a href="#">Posuere nisl eu venenatis gravida</a></li>
-                            <li><a href="#">Morbi dictum ligula mattis</a></li>
-                            <li><a href="#">Etiam diam vel dolor luctus dapibus</a></li>
-                            <li><a href="#">Vestibulum ultrices magna </a></li>
-                        </ul>-->
                     </div>
                     <div class="col media">
                         <h3>Social media</h3>
@@ -109,8 +74,8 @@
                         <p><span class="ico ico-ph"></span>99000000</p>
                     </div>
                     <div class="col newsletter">
-                        <!--<h3>Join our newsletter</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium.</p>-->
+                        <h3>Join our newsletter</h3>
+                        <!--<p>Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium.</p>-->
                         <form action="#">
                             <input type="text" placeholder="Your email address...">
                             <button type="submit"></button>
