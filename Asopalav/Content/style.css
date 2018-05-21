@@ -265,7 +265,8 @@ a {
     color: #d9d9d9;
     font-size: 14px;
     overflow: hidden;
-    padding: 12px 0;
+    padding: 5px 0;
+    width: 100%;
 }
 
     #breadcrumbs li {
@@ -864,7 +865,7 @@ h1 {
     .product .image {
         float: left;
         overflow: hidden;
-        width: 570px;
+        width: auto;
         height: 570px;
         margin: 13px 130px 0 0;
         border: 1px solid #d3d3d3;
@@ -1152,11 +1153,11 @@ h1 {
 
 #footer {
     clear: both;
-    background: #222224 url(../Content/images1/bg_footer.png);
     padding: 27px 0 0;
     color: #a5a5aa;
     font-size: 14px;
     line-height: 30px;
+    background:#525456;
 }
 
     #footer h3 {
@@ -1289,7 +1290,7 @@ h1 {
 }
 
 #footer .copy {
-    color: #717176;
+    color: #a2a2a2;
     font-size: 14px;
     padding: 28px 0;
     clear: both;
@@ -1914,6 +1915,10 @@ h1 {
     color: #fff;
 }
 
-#footer {
-    background:#0d5198;
+.media {
+    margin-top: 0 !important;
+}
+
+.product-margin-top {
+    margin: 120px auto 0 auto;
 }

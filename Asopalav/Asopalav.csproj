@@ -214,7 +214,8 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\images1\0.jpg" />
+    <Content Include="Content\easyzoom.css" />
+    <Content Include="Content\example.css" />
     <Content Include="Content\images1\01.jpg" />
     <Content Include="Content\images1\013.jpg" />
     <Content Include="Content\images1\02.jpg" />
@@ -272,6 +273,25 @@
     <Content Include="Content\images1\ico_plus.png" />
     <Content Include="Content\images1\logo%402x.png" />
     <Content Include="Content\images1\logo.png" />
+    <Content Include="Content\images1\product-image\1_standard.jpg" />
+    <Content Include="Content\images1\product-image\1_zoom.jpg" />
+    <Content Include="Content\images1\product-image\2_standard.jpg" />
+    <Content Include="Content\images1\product-image\2_zoom.jpg" />
+    <Content Include="Content\images1\product-image\3_standard_1.jpg" />
+    <Content Include="Content\images1\product-image\3_standard_2.jpg" />
+    <Content Include="Content\images1\product-image\3_standard_3.jpg" />
+    <Content Include="Content\images1\product-image\3_standard_4.jpg" />
+    <Content Include="Content\images1\product-image\3_thumbnail_1.jpg" />
+    <Content Include="Content\images1\product-image\3_thumbnail_2.jpg" />
+    <Content Include="Content\images1\product-image\3_thumbnail_3.jpg" />
+    <Content Include="Content\images1\product-image\3_thumbnail_4.jpg" />
+    <Content Include="Content\images1\product-image\3_zoom_1.jpg" />
+    <Content Include="Content\images1\product-image\3_zoom_2.jpg" />
+    <Content Include="Content\images1\product-image\3_zoom_3.jpg" />
+    <Content Include="Content\images1\product-image\3_zoom_4.jpg" />
+    <Content Include="Content\images1\product-image\test_standard.jpg" />
+    <Content Include="Content\images1\product-image\test_zoom.jpg" />
+    <Content Include="Content\pygments.css" />
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -314,9 +334,11 @@
     <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_LoginPartial.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\easyzoom.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />

@@ -3,112 +3,126 @@
 @{
     ViewBag.Title = "Index";
 }
+<script>
+		var _gaq=[['_setAccount','UA-2508361-9'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
 
-<h2>Index</h2>
-
-<div>
-    <h4>ProductModel</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.ProductCode)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ProductCode)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ProductName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ProductName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ProductTypeID)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ProductTypeID)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.WeightInGms)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.WeightInGms)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Height_width_inch)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Height_width_inch)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.IsOffer)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.IsOffer)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.OfferPrice)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.OfferPrice)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SmallImage)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SmallImage)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BigImage)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BigImage)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.IsActive)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.IsActive)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-
-    </dl>
+<div id="breadcrumbs" class="product-margin-top">
+    <div class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>Product page</li>
+        </ul>
+    </div>
+    <!-- / container -->
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+<!-- / body -->
+<div id="body">
+    <div class="container">
+        <div id="content" class="full">
+            <div class="product">
+                <div class="image">
+
+                    <section id="example">
+                        <div style="float: right; width: 310px; height: 400px; background: #EEE;"></div>
+                        <div class="easyzoom easyzoom--adjacent easyzoom--with-thumbnails">
+                            <a href="/content/images1/product-image/2_zoom.jpg">
+                                <img src="/content/images1/product-image/2_standard.jpg" alt="" width="310" height="400" />
+                            </a>
+                        </div>
+
+                        <ul class="thumbnails">
+                            <li>
+                                <a href="/content/images1/product-image/3_zoom_1.jpg" " data-standard="/content/images1/product-image/3_standard_1.jpg">
+                                    <img src="/content/images1/product-image/3_thumbnail_1.jpg" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/content/images1/product-image/3_zoom_2.jpg" data-standard="/content/images1/product-image/3_standard_2.jpg">
+                                    <img src="/content/images1/product-image/3_thumbnail_2.jpg" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/content/images1/product-image/3_zoom_3.jpg" data-standard="/content/images1/product-image/3_standard_3.jpg">
+                                    <img src="/content/images1/product-image/3_thumbnail_3.jpg" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/content/images1/product-image/3_zoom_4.jpg" data-standard="/content/images1/product-image/3_standard_4.jpg">
+                                    <img src="/content/images1/product-image/3_thumbnail_4.jpg" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                        </section>
+</div>
+                <div class="details">
+                    <h1>Lorem ipsum dolor</h1>
+                    <h4>$990.00</h4>
+                    <div class="entry">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <div class="tabs">
+                            <div class="nav">
+                                <ul>
+                                    <li class="active"><a href="#desc">Description</a></li>
+                                    <li><a href="#spec">Specification</a></li>
+                                    <li><a href="#ret">Returns</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-content active" id="desc">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            </div>
+                            <div class="tab-content" id="spec">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            </div>
+                            <div class="tab-content" id="ret">
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <label>Quantity:</label>
+                        <select><option>1</option></select>
+                        <a href="#" class="btn-grey">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / content -->
+    </div>
+    <!-- / container -->
+</div>
+<script>
+		// Instantiate EasyZoom instances
+		var $easyzoom = $('.easyzoom').easyZoom();
+
+		// Setup thumbnails example
+		var api1 = $easyzoom.filter('.easyzoom--with-thumbnails').data('easyZoom');
+
+		$('.thumbnails').on('click', 'a', function(e) {
+			var $this = $(this);
+
+			e.preventDefault();
+
+			// Use EasyZoom's `swap` method
+			api1.swap($this.data('standard'), $this.attr('href'));
+		});
+
+		// Setup toggles example
+		var api2 = $easyzoom.filter('.easyzoom--with-toggle').data('easyZoom');
+
+		$('.toggle').on('click', function() {
+			var $this = $(this);
+
+			if ($this.data("active") === true) {
+				$this.text("Switch on").data("active", false);
+				api2.teardown();
+			} else {
+				$this.text("Switch off").data("active", true);
+				api2._init();
+			}
+		});
+</script>
+<!-- / body -->
