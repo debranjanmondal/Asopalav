@@ -21,9 +21,9 @@ namespace Asopalav
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/code.jquery.com/jquery-3.1.1.min.js",
+                      "~/Scripts/jquery-3.1.1.min.js",
                       "~/Scripts/respond.js",
-                      //"~/Scripts/jquery-1.11.1.min.js",
+                      "~/Scripts/jquery-1.11.1.min.js",
                       //"~/Scripts/jquery.js",
                       "~/Scripts/easyzoom.js",
                       "~/Scripts/main.js",
