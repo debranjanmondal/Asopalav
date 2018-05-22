@@ -273,6 +273,14 @@
     <Content Include="Content\images1\ico_plus.png" />
     <Content Include="Content\images1\logo%402x.png" />
     <Content Include="Content\images1\logo.png" />
+    <Content Include="Content\images1\original\01_b_car.jpg" />
+    <Content Include="Content\images1\original\02_o_car.jpg" />
+    <Content Include="Content\images1\original\03_r_car.jpg" />
+    <Content Include="Content\images1\original\04_g_car.jpg" />
+    <Content Include="Content\images1\preview\01_b_car.jpg" />
+    <Content Include="Content\images1\preview\02_o_car.jpg" />
+    <Content Include="Content\images1\preview\03_r_car.jpg" />
+    <Content Include="Content\images1\preview\04_g_car.jpg" />
     <Content Include="Content\images1\product-image\1_standard.jpg" />
     <Content Include="Content\images1\product-image\1_zoom.jpg" />
     <Content Include="Content\images1\product-image\2_standard.jpg" />
@@ -291,8 +299,13 @@
     <Content Include="Content\images1\product-image\3_zoom_4.jpg" />
     <Content Include="Content\images1\product-image\test_standard.jpg" />
     <Content Include="Content\images1\product-image\test_zoom.jpg" />
+    <Content Include="Content\images1\thumbs\01_b_car.jpg" />
+    <Content Include="Content\images1\thumbs\02_o_car.jpg" />
+    <Content Include="Content\images1\thumbs\03_r_car.jpg" />
+    <Content Include="Content\images1\thumbs\04_g_car.jpg" />
     <Content Include="Content\pygments.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\xzoom.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\Novecentowide-Bold.svg" />
@@ -335,6 +348,7 @@
     <Content Include="Areas\Admin\Views\Shared\_LoginPartial.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\easyzoom.js" />
+    <Content Include="Scripts\foundation.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -347,6 +361,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\setup.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
